@@ -11,15 +11,19 @@
         <div class="calculadora">
             <label for="primer_numero">
                 Primer numero:
-                <input class="input_calculadora" type="text" name="primer_numero">
+                <input id="primer_numero" class="input_calculadora" type="text" name="primer_numero">
             </label>
             <label for="operador">
-
+                <select name="operador" id="operador" class="input_calculadora">
+                    <option value="suma">+</option>
+                </select>
             </label>
             <label for="segundo_numero">
                 Segundo numero:
-                <input class="input_calculadora" type="text" name="segundo_numero">
+                <input class="input_calculadora" type="text" name="segundo_numero" id="segundo_numero">
             </label>
+
+            <button onclick="calcular();" class="input_calculadora">Calcular</button>
 
             <p id="errores" class="borde_gris">
                 Aquí podrás ver los errores
@@ -30,5 +34,6 @@
             </p>
         </div>
     </section>
+    <script src="scripts/calculator.js"></script>
 </body>
 </html>
