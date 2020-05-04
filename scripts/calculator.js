@@ -1,18 +1,18 @@
 function calcular() {
-    var operador = document.getElementById("errores").value;
-    var error_resultado = document.getElementById("resultados");
+    var operador = document.getElementById("operador").value;
+    var error_resultado = document.getElementById("errores");
     alert("Has elegido " + operador);
 
     var primer_numero = document.getElementById("primer_numero").value;
     var segundo_numero = document.getElementById("segundo_numero").value;
 
-    if(primer_numero == null){
-        error_resultado,innerHTML = "Debes ingresar el primer número";
+    if(primer_numero == ""){
+        error_resultado.innerHTML = "Debes ingresar el primer número";
         return;
     }
 
-    if(segundo_numero == null){
-        error_resultado,innerHTML = "Debes ingresar el segundo número";
+    if(segundo_numero == ""){
+        error_resultado.innerHTML = "Debes ingresar el segundo número";
         return;
     }
 
@@ -35,7 +35,7 @@ function calcular() {
 
     if(operador == "division") {
         if(segundo_numero == 0){
-            error_resultado,innerHTML = "El segundo número no puede ser 0";
+            error_resultado.innerHTML = "El segundo número no puede ser 0";
             return;
         }
         var resultado = parseInt(primer_numero) / parseInt(segundo_numero);
