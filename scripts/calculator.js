@@ -11,4 +11,9 @@ function calcular() {
         var resultado = parseInt(primer_numero) + parseInt(segundo_numero);
         info_resultado.innerHTML = resultado;
     }
+
+    if(operador == "resta") {
+        var resultado = parseInt(primer_numero) - parseInt(segundo_numero);
+        info_resultado.innerHTML = resultado;
+    }
 }
