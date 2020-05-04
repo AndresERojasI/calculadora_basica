@@ -16,4 +16,9 @@ function calcular() {
         var resultado = parseInt(primer_numero) - parseInt(segundo_numero);
         info_resultado.innerHTML = resultado;
     }
+
+    if(operador == "multiplicacion") {
+        var resultado = parseInt(primer_numero) * parseInt(segundo_numero);
+        info_resultado.innerHTML = resultado;
+    }
 }
